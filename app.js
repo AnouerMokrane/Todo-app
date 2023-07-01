@@ -30,6 +30,9 @@ toggle.addEventListener("click", () => {
   }
 });
 
+
+emptyState();
+
 getData();
 
 tasksInput.addEventListener("keypress", (e) => {
