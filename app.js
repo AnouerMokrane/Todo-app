@@ -30,8 +30,7 @@ toggle.addEventListener("click", () => {
   }
 });
 
-
-emptyState();
+window.addEventListener("DOMContentLoaded",emptyState);
 
 getData();
 
