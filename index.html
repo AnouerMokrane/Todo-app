@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stay organized and boost productivity with our intuitive and feature-rich to-do app. Easily manage your tasks, create reminders, and track your progress. With a user-friendly interface, customizable options, and seamless synchronization across devices, our to-do app helps you stay on top of your busy schedule and accomplish more. Download now and take control of your tasks with ease."
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="header">
+          <h1>Todo</h1>
+          <button class="toggle" aria-label="toggle dark mode">
+            <img src="./images/icon-moon.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="input">
+          <div class="check"></div>
+          <input type="text" placeholder="Create a new todo..." />
+        </div>
+
+        <div class="todo-container">
+          <div class="empty-state"></div>
+          <div class="todo-body">
+            <ul class="todo-list"></ul>
+            <div class="todo-footer">
+              <span class="left-items"><span></span> items left</span>
+              <button class="clear-completed">Clear Completed</button>
+            </div>
+          </div>
+          <div class="filter-buttons">
+            <button class="filter-button all active">All</button>
+            <button class="filter-button non-completed">Active</button>
+            <button class="filter-button completed">Completed</button>
+          </div>
+        </div>
+
+        <p class="hepler-text">
+          Drag and drop to reorder list <br />
+          Not supported on mobile
+        </p>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
